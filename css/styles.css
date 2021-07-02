@@ -35,6 +35,11 @@ body.active {
     z-index: -1;
 }
 
+.img {
+    width: 300px;
+    height: 300px;
+}
+
 .selected {
     background-color: green;
 }
