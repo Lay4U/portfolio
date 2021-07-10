@@ -1,668 +1,1224 @@
-<!-- 
-    TODO: show more로 프로젝트 자세하게 설명
-    TODO: 각각의 프로젝트 이미지 마다 git 주소 연동
-    TODO: 자기소개... 뭘 써야 하나..
-    TODO: UI 커스터마이징
-    
-
-    Capstone
-    AICNN
-    WDSN
-    DSProject
-    RTOS-Lab 랩실... 어떻게처리??
-    자료없는 프로젝트도 추가?
- -->
-
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="ko">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Kim Hyoeng Rae's Portfolio</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" />
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/styles.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta name="author" content="김강산" />
+    <meta name="description" content="김강산의 포트폴리오 사이트" />
+    <meta name="keywords" content="웹퍼블리셔, 웹접근성, 반응형사이트, HTML5, WEB" />
+    <title>PORTFOLIO</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- web font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Fugaz+One&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet" />
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" />
+
+    <!-- HTLM5shiv ie6~8 -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.min.js"></script>
+      <script type="text/javascript">
+        alert(
+          '현재 브라우저는 지원하지 않습니다. 크롬 브라우저를 추천합니다.!'
+        );
+      </script>
+    <![endif]-->
 </head>
 
 <body>
-    <div id="mobile-menu-open" class="shadow-large">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
-    <!-- End #mobile-menu-toggle -->
-    <header class="sticky">
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <ul id="menu" class="shadow">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </header>
-    <!-- End header -->
-
-    <div id="lead">
-        <div id="lead-content">
-            <h1>Kim Hyoeng Rae</h1>
-            <h2>Full-Stack Developer</h2>
-            <!-- TODO: Resume CV작성후 추가 -->
-            <!-- <a href="#" class="btn-rounded-white">Download Resume</a> -->
-        </div>
-        <!-- End #lead-content -->
-
-        <div id="lead-overlay"></div>
-
-        <div id="lead-down">
-            <span>
-          <i class="fa fa-chevron-down" aria-hidden="true"></i>
-        </span>
-        </div>
-        <!-- End #lead-down -->
-    </div>
-    <!-- End #lead -->
-
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
-                    <br>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                        자기소개 아직 현업에 종사하면서 경력을 쌓아 본 적은 없는 신입이지만, 대학교 과정에서 학교 내에서 주어지는 과제들과 프로젝트 내에서만 머무는 것이 아니라 궁금한 것은 직접 찾아보고 새로운 것은 스스로 배워서 익혀가며 실무에서 필요할 경험들을 쌓아왔습니다. 처음 보는 기술들을 두려움으로 마주하는 것이 아닌 열정과 호기심으로 받아들이며 스스로를 위한 경험을 쌓고자 노력했습니다.
-                        <br><br><br> - 자기소개 - 학력(or 이력) - 연락처 - 교육 이력 - 스킬 완료
-                    </p>
-                    <br>
-                    <br>
-                    <br>
-                    <ul>
-                        <li>Experience를 빼는게 좋을까?..</li>
-                        <li>Education 아래에 쓸 내용이 있을까..?</li>
-                        <li>산출물이 없는 학부 프로젝트는 어떻게 기술해야할까..?</li>
-                        <li>추가적으로 들어가야할 내용들..?</li>
-                        <li></li>
-                        <li>TODO: github 저장소 있는 프로젝트에는 맞는 사진 넣기</li>
-                        <li>TODO: View more로 프로젝트 구체적 사항 명시하기</li>
-                        <li>TODO: JavaScript로 동적인 효과 넣기</li>
-                    </ul>
-                </div>
-            </div>
+    <div class="progress" id="progress">
+        <span class="progress-bar"></span>
+        <span class="progress-text"></span>
+        <div class="loader">
+            <div class="loader_box"></div>
+            <div class="loader_box"></div>
         </div>
     </div>
-    <!-- End #about -->
 
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-            <div data-date="2006. 05 – 2020. 12">
-                <h3>Time Series</h3>
-                <h4>시계열 데이터 분석 및 예측</h4>
-                <p>
-                    하이투자증권 Yestrader - YesStock Language.<br>C++ - API - SystemTrading<br>LISP - Pattern Recognition <br>Machine Learning - Time series Predict <br>Reinforcement Learning - Trade strategy
-                </p>
-            </div>
+    <!-- //progress -->
 
-            <div data-date="2012. 01 – 2013. 01">
-                <h3><del>하남 한진택배 허브</del></h3>
-                <h4>상하차</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
-            </div>
-
-            <div data-date="2013. 01 – 2017. 01">
-                <h3><del>삼영인력</del></h3>
-                <h4>잡부</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
-            </div>
-
-            <div data-date="2017. 01 – 2018. 01">
-                <h3><del>코렌</del></h3>
-                <h4>코팅팀 생산직</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- End #experience -->
-
-    <div id="education">
-        <h2 class="heading">Education</h2>
-        <div class="education-block">
-            <h3>경기대학교</h3>
-            <span class="education-date">2012. 02 - 2020. 02</span>
-            <h4>Computer Science</h4>
-            <br><br>
-            <h3>RTOS AI LAB</h3>
-            <span class="education-date">2019. 02 - 2020. 02</span>
-            <h4>Time Series Predict</h4>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-            </p>
-        </div>
-        <!-- End .education-block -->
-
-        <!-- <div class="education-block">
-            <h3>University of Ottawa</h3>
-            <span class="education-date">Sept 2016 - Sept 2017</span>
-            <h4>Bachelor of Science in Computer Science</h4>
-            <ul>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-            </ul>
-        </div> -->
-        <!-- End .education-block -->
-    </div>
-    <!-- End #education -->
-
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <a href="https://github.com/Lay4U/CapstOne" target="_blank">
-                            <img class="img" src="images/click_me.png" />
-                        </a>
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>지하철 혼잡도 예측 App</h3>
-                        <p>
-                            캡스톤설계 <br>2019년 1학기 <br><br>지하철 탑승 인원을 시계열로 입력받아 LSTM 네트워크를 활용하여 각 지하철 역의 시간대별 혼잡도를 예측하는 시스템을 개발하였다.
-                        </p>
-                        <a href="#">View More</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <a href="https://github.com/Lay4U/AICNN" target="_blank">
-                            <img class="img" src="images/click_me.png" />
-                        </a>
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>고양이, 개 이미지 분류</h3>
-                        <p>
-                            인공지능 <br>2018년 2학기 <br><br>CNN을 활용하여 이미지를 분류하는 시스템을 개발하였다. 학습된 이미지 데이터를 통해 이미지를 정확하게 분류하는 기능을 제작하였다.
-                        </p>
-                        <a href="#">View More</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <!-- inject -->
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <a href="https://github.com/Lay4U/WDSN" target="_blank">
-                            <img class="img" src="images/click_me.png" />
-                        </a>
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>반응형 커뮤니티 웹 사이트</h3>
-                        <p>
-                            웹서비스설계 <br>2018년 2학기 <br><br>커뮤니티 사이트를 만드는 것을 jsp를 기반으로 제작하였으며 회원 관리를 위한 데이터베이스를 구축하고 서버를 활성화 시켰다.
-                        </p>
-                        <a href="#">View More</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <a href="https://github.com/Lay4U/DSProject" target="_blank">
-                            <img class="img" src="images/click_me.png" />
-                        </a>
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>크롤링을 통한 단어 수 세기</h3>
-                        <p>
-                            분산및병렬처리 <br>2018년 2학기 <br><br>다양한 웹사이트를 파이썬으로 크롤링하여 모든 단어를 가져와 mysql을 사용하여 쿼리를 이용하여 단어를 나누고 단어수를 카운트하여 시각화하였다.
-                        </p>
-                        <a href="#">View More</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <!-- Start .project -->
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <a href="https://github.com/Lay4U/RTOS_StepByStep" target="_blank">
-                            <img class="img" src="images/click_me.png" />
-                        </a>
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Search Engine Essay</h3>
-                        <p>
-                            고급데이터베이스 <br>2020년 2학기 학석사통합연계과정 <br><br>search engine에 대한 심화 과정에서 SearchBoth와 DogPile을 combination한 SearchEngine에 대한 Essay을 작성하였다.
-                        </p>
-                        <a href="./201215531_김형래_SearchEngine Combined with SearchBoth and DogPile.pdf">SearchEngine Combined with SearchBoth and DogPile.pdf</a>
-                    </div>
-                </div>
-                <!-- End .project-info -->
-
-                <!-- End .project -->
-                <!-- Start .project -->
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <a href="https://github.com/Lay4U/SIST_2Team" target="_blank">
-                            <img class="img" src="images/click_me.png" />
-                        </a>
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>그룹웨어 - 자바 콘솔</h3>
-                        <p>
-                            쌍용 교육센터 자바과정 <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. In unde provident magnam repellat, culpa iusto dignissimos ea reprehenderit nisi facilis aliquam eveniet doloremque, fuga ducimus maxime nobis labore
-                            est eum!
-                        </p>
-
-                        <a href="#">View More</a>
-                    </div>
-                </div>
-                <!-- End .project-info -->
-                <!-- Start .project -->
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <a href="https://google.com" target="_blank">
-                            <img class="img" src="images/click_me.png" />
-                        </a>
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Oracle DB</h3>
-                        <p>
-                            쌍용 교육센터 DB과정 <br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora a, blanditiis sit rerum magni esse, nisi aperiam, numquam reiciendis cumque veniam. Voluptatibus fuga incidunt est culpa cum perferendis
-                            ratione perspiciatis!
-                        </p>
-                        <a href="#">View More</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
-            <!-- End .project -->
-            <div class="project shadow-large no-image">
-                <!-- <div class="project-image">
-                        <img src="images/click_me.png" />
-                    </div> -->
-                <!-- End .project-image -->
-                <div class="project-info">
-                    <h3>차선 인식 시스템</h3>
-                    <p>
-                        멀티미디어처리기술 <br>2019년 1학기 <br><br>차량의 블랙박스 데이터를 활용하여 opencv와 CNN을 활용하여 차선을 인식하는 시스템을 개발하여 현재 차량이 차선을 벗어나고 있는지 확인하는 시스템을 개발하였다.
-                    </p>
-                    <a href="#">V</a>
-                </div>
-                <!-- End .project-info -->
-            </div>
-            <!-- End .project -->
-            <div class="project shadow-large no-image">
-                <!-- <div class="project-image">
-                        <img src="images/click_me.png" />
-                    </div> -->
-                <!-- End .project-image -->
-                <div class="project-info">
-                    <h3>실시간 채팅 시스템</h3>
-                    <p>
-                        네트워크프로그래밍 <br>2018년 1학기 <br><br>소켓 프로그래밍을 기반으로 실시간 채팅 시스템을 구현하였다. 리눅스 환경에서 개발하였고 수업시간때 배운 네트워크 이론을 기반으로 irc 채팅 시스템을 구현하였다.
-                    </p>
-                    <a href="#">V</a>
-                </div>
-                <!-- End .project-info -->
-            </div>
-            <!-- End .project -->
-            <div class="project shadow-large no-image">
-                <!-- <div class="project-image">
-                        <img src="images/click_me.png" />
-                    </div> -->
-                <!-- End .project-image -->
-                <div class="project-info">
-                    <h3>소프트웨어 개발 프로세스</h3>
-                    <p>
-                        소프트웨어공학 <br>2018년 1학기 <br><br>소프트웨어를 개발하는 프로세스를 툴을 이용하여 UML형식으로 개발하여 소프트웨어의 개발 주기를 관리하는 기능을 제작하였다.
-                    </p>
-                    <a href="#">V</a>
-                </div>
-                <!-- End .project-info -->
-            </div>
-            <!-- End .project -->
-            <div class="project shadow-large no-image">
-                <!-- <div class="project-image">
-                        <img src="images/click_me.png" />
-                    </div> -->
-                <!-- End .project-image -->
-                <div class="project-info">
-                    <h3>랜섬웨어 개발</h3>
-                    <p>
-                        컴퓨터보안 <br>2018년 2학기 <br><br>이미지 파일을 압축하여 압축을 푸는 과정에서의 취약점을 이용하여 랜섬웨어가 유포되어 시스템내의 모든 파일을 암호화 시키는 방식을 활용하여 랜섬웨어를 구현해보았다.
-                    </p>
-                    <a href="#">V</a>
-                </div>
-                <!-- End .project-info -->
-            </div>
-            <!-- End .project -->
-
-            <div class="project shadow-large no-image">
-                <!-- <div class="project-image">
-                        <img src="images/click_me.png" />
-                    </div> -->
-                <!-- End .project-image -->
-                <div class="project-info">
-                    <h3>Divide and Conquer & Dynamic Programming</h3>
-                    <p>
-                        알고리즘 <br>2019년 1학기 <br><br>Brute-Force, 분할 정복법과 다이나믹 프로그래밍을 이용하여 알고리즘 문제를 해결하는 프로젝트를 진행하였다.
-                    </p>
-                    <a href="#">V</a>
-                </div>
-                <!-- End .project-info -->
-            </div>
-            <!-- End .project -->
-            <!-- Start .project -->
-            <div class="project shadow-large no-image">
-                <!-- <div class="project-image">
-                        <img src="images/click_me.png" />
-                    </div> -->
-                <!-- End .project-image -->
-                <div class="project-info">
-                    <h3>그래픽스 애니메이션</h3>
-                    <p>
-                        컴퓨터 그래픽스 <br>2018년 2학기 <br><br>C++을 이용하여 컴퓨터 그래픽스 애니메이션프로젝트를 진행하였다.
-                    </p>
-                    <a href="#">V</a>
-                </div>
-                <!-- End .project-info -->
-            </div>
-            <!-- End .project -->
-
-            <!-- Start .project -->
-            <div class="project shadow-large no-image">
-                <!-- <div class="project-image">
-                        <img src="images/click_me.png" />
-                    </div> -->
-                <!-- End .project-image -->
-                <div class="project-info">
-                    <h3>DeadLock Avoid</h3>
-                    <p>
-                        운영체제 <br>2018년 1학기 <br><br>가상의 학습 OS를 컴파일 하여 OS를 수정및 컴파일하여 DeadLock을 avoid 하기 위한 Banker’s Algorithm을 구현하는 프로젝트를 진행하였다.
-                    </p>
-                    <a href="#">V</a>
-                </div>
-                <!-- End .project-info -->
-            </div>
-            <!-- End .project -->
-            <!-- Start .project -->
-            <div class="project shadow-large no-image">
-                <!-- <div class="project-image">
-                        <img src="images/click_me.png" />
-                    </div> -->
-                <!-- End .project-image -->
-                <div class="project-info">
-                    <h3>레지스트 활용</h3>
-                    <p>
-                        컴퓨터구조 <br>2013년 2학기 <br><br>레지스트를 활용한 계산기 프로젝트를 진행 함으로써 컴퓨터 구조에 대한 전반적이 이해가 가능했다.
-                    </p>
-                    <a href="#">V</a>
-                </div>
-                <!-- End .project-info -->
-            </div>
-            <!-- End .project -->
-            <!-- Start .project -->
-            <div class="project shadow-large no-image">
-                <!-- <div class="project-image">
-                        <img src="images/click_me.png" />
-                    </div> -->
-                <!-- End .project-image -->
-                <div class="project-info">
-                    <h3>데이터베이스 구축</h3>
-                    <p>
-                        데이터베이스 <br>2013년 2학기<br><br>데이터베이스를 구축하여 웹 서버와 연동하고 실질적인 관리하는 프로젝트를 진행하였다.
-                    </p>
-                    <a href="#">V</a>
-                </div>
-                <!-- End .project-info -->
-            </div>
-            <!-- End .project -->
-            <!-- Start .project -->
-            <div class="project shadow-large no-image">
-                <!-- <div class="project-image">
-                        <img src="images/click_me.png" />
-                    </div> -->
-                <!-- End .project-image -->
-                <div class="project-info">
-                    <h3>어셈블리어</h3>
-                    <p>
-                        시스템소프트웨어 <br>2013년 1학기 <br><br>어셈블리어를 통해 컴퓨터 구조 내부의 회로를 구성하는 프로젝트를 수행함으로써 시스템 소프트웨어및 컴퓨터 구조에 대한 전반적인 이해가 가능했다.
-                    </p>
-                    <a href="#">V</a>
-                </div>
-                <!-- End .project-info -->
-            </div>
-            <!-- End .project -->
-            <!-- Start .project -->
-            <div class="project shadow-large no-image">
-                <!-- <div class="project-image">
-                        <img src="images/click_me.png" />
-                    </div> -->
-                <!-- End .project-image -->
-                <div class="project-info">
-                    <h3>1,2학년</h3>
-                    <p>
-                        컴퓨터과학개론,C프로그래밍,자료구조론,자바프로그래밍1,컴퓨터구조,자료구조설계등.. <br><br>주소록 만들기와 같은 규모가 너무 작고 기술적 내용이 많이 안들어간 것들.. 산출물도 없다..
-                    </p>
-                    <a href="#">V</a>
-                </div>
-                <!-- End .project-info -->
-            </div>
-            <!-- End .project -->
-            <!-- Start .project -->
-            <div class="project shadow-large no-image">
-                <!-- <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div> -->
-                <!-- End .project-image -->
-                <div class="project-info">
-                    <h3>자바 연락처</h3>
-                    <p>
-                        자바 <br>2012년 1학기 <br><br>자바 첫 프로젝트 연락처 만들기 이런 프로젝트도 넣어야 하는가?
-                    </p>
-                    <a href="#">V</a>
-                </div>
-                <!-- End .project-info -->
-            </div>
-            <!-- End .project -->
-        </div>
-    </div>
-    </div>
-    <!-- End #projects -->
-
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
+    <div id="dot">
         <ul>
-            <li class="selected">JavaScript</li>
-            <li class="selected">Python</li>
-            <li>Ruby</li>
-            <li>Go</li>
-            <li>Node.js</li>
-            <li>AngularJs</li>
-            <li>React</li>
-            <li>Elixir</li>
-            <li class="selected">Java</li>
-            <li class="selected">C</li>
-            <li>C#</li>
-            <li class="selected">C++</li>
-            <li>Ruby on Rails</li>
-            <!-- 대충때려넣은듯 -->
-            <li class="selected">JavaScript</li>
-            <li class="selected">Python</li>
-            <li>Ruby</li>
-            <li>Go</li>
-            <li>Node.js</li>
-            <li>AngularJs</li>
-            <li>React</li>
-            <li>Elixir</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>Ruby on Rails</li>
+            <li class="active">
+                <a href="#"><em class="active">01</em><span>HOME</span></a>
+            </li>
+            <li>
+                <a href="#"><em>02</em><span>ABOUT ME</span></a>
+            </li>
+            <li>
+                <a href="#"><em>03</em><span>PORTFOLIO</span></a>
+            </li>
+            <li>
+                <a href="#"><em>04</em><span>ANIMATION</span></a>
+            </li>
+            <li>
+                <a href="#"><em>05</em><span>CONTACT</span></a>
+            </li>
         </ul>
     </div>
-    <!-- End #skills -->
-    <!-- Contact -->
-    <section class="page-section" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading text-uppercase">Contact Me</h2>
-                    <h3 class="section-heading text-uppercase">kmr345@naver.com</h3>
-                    <h3 class="section-heading text-uppercase">010-6429-9710</h3>
-                    <h3 class="section-heading text-uppercase">https://github.com/Lay4U</h3>
-                    <!-- <h3 class="section-heading text-uppercase">https://www.linkedin.com/in/charleslewis432/</h3> -->
-                    <!-- <h3 class="section-heading text-uppercase">http://www.charleslewis.us</h3> -->
-                    <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
+    <!-- //dot -->
 
+    <div class="menu-wrapper">
+        <button class="menu-button wrap">
+        <span class="menu-button-item line">
+          <svg viewBox="0 0 80 80" width="100%" height="100%">
+            <path
+              class="est0"
+              d="M65.4 14.8L40.1 4.3 14.8 14.8 4.3 40.2l10.5 25.3L40.2 76l25.3-10.5L76 40.2 65.4 14.8zm-1.1 49.5l-24.2 10-24.1-10L6 40.1l10-24.2L40.1 6l24.2 10 10 24.2-10 24.1z"
+            ></path>
+          </svg>
+        </span>
+        <span class="menu-button-item dots">
+          <svg viewBox="0 0 80 80" width="100%" height="100%">
+            <circle class="dst0" cx="40.1" cy="5.2" r="1.9"></circle>
+            <circle class="dst0" cx="40.1" cy="75.1" r="1.9"></circle>
+            <g>
+              <circle class="dst0" cx="5.1" cy="40.1" r="1.9"></circle>
+              <circle class="dst0" cx="75.1" cy="40.1" r="1.9"></circle>
+            </g>
+          </svg>
+        </span>
+        <span class="menu-button-item base">
+          <svg viewBox="0 0 80 80" id="burger-base" width="100%" height="100%">
+            <path
+              class="cst0"
+              d="M61.3 18.9l-21.2-8.8-21.2 8.8-8.8 21.3 8.8 21.2 21.3 8.7 21.2-8.8 8.7-21.2z"
+            ></path>
+          </svg>
+        </span>
+        <div class="icon-wrap">
+          <div class="icon"></div>
+        </div>
+      </button>
+    </div>
+    <!-- //menu-wrapper -->
+
+    <div class="menu-inner">
+        <div class="box-wrap">
+            <div class="box1 right">
+                <div class="overlay right"></div>
+            </div>
+            <div class="box2 right">
+                <div class="overlay right"></div>
+            </div>
+            <div class="box2 right">
+                <div class="overlay right"></div>
+            </div>
+            <div class="box1 right">
+                <div class="overlay right"></div>
+            </div>
+            <div class="box1 left">
+                <div class="overlay left"></div>
+            </div>
+            <div class="box2 left">
+                <div class="overlay left"></div>
+            </div>
+            <div class="box2 left">
+                <div class="overlay left"></div>
+            </div>
+            <div class="box1 left">
+                <div class="overlay left"></div>
+            </div>
+
+            <div class="menu">
+                <div id="line">
+                    <div class="line sline"></div>
+                    <div class="line mline"></div>
+                    <div class="line mline"></div>
+                    <div class="line sline"></div>
+                    <div class="hline"></div>
+                </div>
+                <div class="o_container">
+                    <div class="menu-left">
+                        <a href="http://kangsane.dothome.co.kr/portfolio" target="_blank"><span>Kim kang san</span></a
+              ><br />
+              <a href="http://kangsane.dothome.co.kr/portfolio" target="_blank"
+                ><span>kangsane.dothome.co.kr/portfolio</span></a
+              >
+            </div>
+            <div class="menu-right">
+              <a href="#section1"><span>HOME</span></a
+              ><br />
+              <a href="#section2"><span>INTRODUCE</span></a
+              ><br />
+              <a href="#section3"><span>CODING</span></a
+              ><br />
+              <a href="#section4"><span>ANIMATION</span></a
+              ><br />
+              <a href="#section5"><span>CONTACT</span></a
+              ><br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //menu-inner -->
+
+    <nav id="nav">
+      <h1>
+        <svg
+          fill="#3EE7AC"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 175 70"
+          enable-background="new 0 0 175 70"
+          xml:space="preserve"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M30.514,33.466c-1.08-0.675-4.24-4.359-4.131-9.71
+                  c0.028-1.396-0.204-3.069,0.287-4.119c0.599-1.281,2.363-1.711,2.558-3.588c0.296-2.852-1.145-3.052-2.587-3.083
+                  c-0.061-0.001-5.384,0-6.466,0c-1.064,0-6.658-0.006-6.725,0c-1.041,0.085-2.804,0.493-2.587,3.34
+                  c0.147,1.925,2.07,2.017,2.587,3.34c0.518,1.328,0.248,2.637,0.259,4.111c0.042,5.759-3.275,9.012-4.402,9.717
+                  C3.715,36.976,0,43.166,0,50.218C0,61.143,8.917,70,19.917,70s19.917-8.857,19.917-19.782
+                  C39.833,43.161,36.113,36.967,30.514,33.466z M21.694,22.379c0.836,0,1.514,0.68,1.514,1.52c0,0.839-0.678,1.52-1.514,1.52
+                  c-0.836,0-1.514-0.68-1.514-1.52C20.18,23.06,20.858,22.379,21.694,22.379z M18.162,17.313c0.557,0,1.009,0.454,1.009,1.013
+                  c0,0.56-0.452,1.013-1.009,1.013s-1.009-0.454-1.009-1.013C17.153,17.767,17.605,17.313,18.162,17.313z M17.522,28.608
+                  c1.462,0,2.647,1.186,2.647,2.65c0,1.464-1.185,2.65-2.647,2.65c-1.462,0-2.647-1.186-2.647-2.65
+                  C14.874,29.795,16.06,28.608,17.522,28.608z M20.043,67.476c-9.538,0-17.269-7.74-17.269-17.288c0-6.466,2.62-10.787,6.807-13.755
+                  c2.103-1.491,5.664-1.066,8.824,0.757c2.048,1.182,4.817,4.354,12.081,2.732c0.885-0.198,1.619-0.02,2.819,0.017
+                  c2.315,1.048,3.791,4.448,4.009,10.249C37.67,59.729,29.58,67.476,20.043,67.476z"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M22.978,8.846c0.611,0,1.106,0.495,1.106,1.106
+                c0,0.611-0.495,1.106-1.106,1.106c-0.611,0-1.106-0.495-1.106-1.106C21.872,9.341,22.367,8.846,22.978,8.846z"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M15.975,6.266c0.814,0,1.474,0.66,1.474,1.474
+                s-0.66,1.474-1.474,1.474c-0.814,0-1.474-0.66-1.474-1.474S15.16,6.266,15.975,6.266z"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M21.688,0c1.12,0,2.027,0.908,2.027,2.027
+                s-0.908,2.027-2.027,2.027c-1.12,0-2.027-0.908-2.027-2.027S20.568,0,21.688,0z"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M19.987,37.261c5.662-0.872,10.45,0.53,13.596,2.822
+                  c-6.125,0.375-9.356,1.404-14.771-2.639C19.145,37.657,19.594,37.322,19.987,37.261z"
+          />
+        </svg>
+        <span class="name">KANGSAN</span>
+        <span class="sname">PORTFOLIO</span>
+      </h1>
+    </nav>
+    <!-- //nav -->
+
+    <section id="contents">
+      <section id="section1">
+        <div id="bg">
+          <div id="stars"></div>
+          <div id="stars2"></div>
+          <div id="stars3"></div>
+        </div>
+        <div class="sec1">
+          <div class="text">
+            <span class="sec1_desc"
+              >Front End Developer / Web Publisher / Web Design</span
+            >
+            <h2 class="glitch">HI,T<span class="style1">HERE</span></h2>
+            <a href="#section2" class="skew"
+              ><span>I NEED YOU TO HIRE ME</span></a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- //section1 -->
+
+      <section id="section2">
+        <div class="s2_bg"></div>
+        <div class="container">
+          <div class="row">
+            <div class="sec2">
+              <p class="strapline">PROFILE</p>
+              <h3>
+                <span>I</span><span>N</span><span>T</span><span>R</span
+                ><span>O</span><span>D</span><span>U</span><span>C</span
+                ><span>E</span>
+              </h3>
+              <div class="photo">
+                <img src="assets/img/photo.jpg" alt="photo" />
+                <p>Kim kangsan</p>
+              </div>
+              <div class="skill-wrap">
+                <div class="skill">
+                  <ul class="clearfix about">
+                    <li class="pie" data-percent="100">
+                      <a href="#" target="_blank"
+                        ><strong class="count">90</strong
+                        ><span class="f1">PHOTOSHOP</span></a
+                      >
+                    </li>
+                    <li class="pie" data-percent="100">
+                      <a href="#" target="_blank"
+                        ><strong class="count">85</strong
+                        ><span class="f1">ILLUSTRATOR</span></a
+                      >
+                    </li>
+                    <li class="pie" data-percent="100">
+                      <a href="#" target="_blank"
+                        ><strong class="count">95</strong
+                        ><span class="f1">HTML</span></a
+                      >
+                    </li>
+                    <li class="pie" data-percent="100">
+                      <a href="#" target="_blank"
+                        ><strong class="count">95</strong
+                        ><span class="f1">CSS</span></a
+                      >
+                    </li>
+                    <li class="pie" data-percent="100">
+                      <a href="#" target="_blank"
+                        ><strong class="count">85</strong
+                        ><span class="f1">JAVASCRIPT</span></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //section2 -->
+
+      <section id="section3">
+        <div class="s3_bg"></div>
+        <div class="container">
+          <div class="row">
+            <div class="sec3">
+              <p class="strapline">MY WORK</p>
+              <h3>
+                <span>C</span><span>O</span><span>D</span><span>I</span
+                ><span>N</span><span>G</span>
+              </h3>
+              <div class="cont_left">
+                <div class="s3_img">
+                  <img src="assets/img/cont1.png" alt="웹표준사이트" />
+                </div>
+                <div class="revealer"></div>
+                <div class="s3_text">
+                  <p class="s3_tit">PROJECT 01</p>
+                  <h4 class="h4_tit">지하철 혼자도 예측 앱</h4>
+                  <span class="mSite">캡스톤 설계 2019년 1학기</span>
+                  <!-- <h5 class="h5_tit">캡스톤 설계 2019. 1학기</h5> -->
+                  <p class="s3_desc">
+                    지하철 탑승 인원을 시계열로 입력받아 LSTM 네트워크를
+                    활용하여 각 지하철 역의 시간대별 혼잡도를 예측하는 시스템을
+                    개발하였다.
+                  </p>
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW SITE</span></a
+                  >
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW MORE</span></a
+                  >
+                </div>
+              </div>
+              <div class="cont_right">
+                <div class="s3_img">
+                  <img src="assets/img/cont2.png" alt="반응형사이트" />
+                </div>
+                <div class="revealer"></div>
+                <div class="s3_text">
+                  <p class="s3_tit">PROJECT 02</p>
+                  <h4 class="h4_tit">고양이, 개 이미지 분류</h4>
+                  <span class="mSite">인공지능 2018년 2학기</span>
+                  <p class="s3_desc">
+                    CNN을 활용하여 이미지를 분류하는 시스템을 개발하였다. 학습된
+                    이미지 데이터를 통해 이미지를 정확하게 분류하는 기능을
+                    제작하였다.
+                  </p>
+                  <a
+                    href="http://kangsane.dothome.co.kr/responsive/html5/index.html"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW SITE</span></a
+                  >
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW MORE</span></a
+                  >
+                </div>
+              </div>
+              <!-- 
+                  내꺼 시작
+                  
+               -->
+              <div class="cont_left">
+                <div class="s3_img">
+                  <img src="assets/img/cont1.png" alt="웹표준사이트" />
+                </div>
+                <div class="revealer"></div>
+                <div class="s3_text">
+                  <p class="s3_tit">PROJECT 01</p>
+                  <h4 class="h4_tit">지하철 혼자도 예측 앱</h4>
+                  <span class="mSite">캡스톤 설계 2019년 1학기</span>
+                  <!-- <h5 class="h5_tit">캡스톤 설계 2019. 1학기</h5> -->
+                  <p class="s3_desc">
+                    지하철 탑승 인원을 시계열로 입력받아 LSTM 네트워크를
+                    활용하여 각 지하철 역의 시간대별 혼잡도를 예측하는 시스템을
+                    개발하였다.
+                  </p>
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW SITE</span></a
+                  >
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW MORE</span></a
+                  >
+                </div>
+              </div>
+              <div class="cont_right">
+                <div class="s3_img">
+                  <img src="assets/img/cont2.png" alt="반응형사이트" />
+                </div>
+                <div class="revealer"></div>
+                <div class="s3_text">
+                  <p class="s3_tit">PROJECT 02</p>
+                  <h4 class="h4_tit">고양이, 개 이미지 분류</h4>
+                  <span class="mSite">인공지능 2018년 2학기</span>
+                  <p class="s3_desc">
+                    CNN을 활용하여 이미지를 분류하는 시스템을 개발하였다. 학습된
+                    이미지 데이터를 통해 이미지를 정확하게 분류하는 기능을
+                    제작하였다.
+                  </p>
+                  <a
+                    href="http://kangsane.dothome.co.kr/responsive/html5/index.html"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW SITE</span></a
+                  >
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW MORE</span></a
+                  >
+                </div>
+              </div>
+              <div class="cont_left">
+                <div class="s3_img">
+                  <img src="assets/img/cont1.png" alt="웹표준사이트" />
+                </div>
+                <div class="revealer"></div>
+                <div class="s3_text">
+                  <p class="s3_tit">PROJECT 01</p>
+                  <h4 class="h4_tit">지하철 혼자도 예측 앱</h4>
+                  <span class="mSite">캡스톤 설계 2019년 1학기</span>
+                  <!-- <h5 class="h5_tit">캡스톤 설계 2019. 1학기</h5> -->
+                  <p class="s3_desc">
+                    지하철 탑승 인원을 시계열로 입력받아 LSTM 네트워크를
+                    활용하여 각 지하철 역의 시간대별 혼잡도를 예측하는 시스템을
+                    개발하였다.
+                  </p>
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW SITE</span></a
+                  >
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW MORE</span></a
+                  >
+                </div>
+              </div>
+              <div class="cont_right">
+                <div class="s3_img">
+                  <img src="assets/img/cont2.png" alt="반응형사이트" />
+                </div>
+                <div class="revealer"></div>
+                <div class="s3_text">
+                  <p class="s3_tit">PROJECT 02</p>
+                  <h4 class="h4_tit">고양이, 개 이미지 분류</h4>
+                  <span class="mSite">인공지능 2018년 2학기</span>
+                  <p class="s3_desc">
+                    CNN을 활용하여 이미지를 분류하는 시스템을 개발하였다. 학습된
+                    이미지 데이터를 통해 이미지를 정확하게 분류하는 기능을
+                    제작하였다.
+                  </p>
+                  <a
+                    href="http://kangsane.dothome.co.kr/responsive/html5/index.html"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW SITE</span></a
+                  >
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW MORE</span></a
+                  >
+                </div>
+              </div>
+              <div class="cont_left">
+                <div class="s3_img">
+                  <img src="assets/img/cont1.png" alt="웹표준사이트" />
+                </div>
+                <div class="revealer"></div>
+                <div class="s3_text">
+                  <p class="s3_tit">PROJECT 01</p>
+                  <h4 class="h4_tit">지하철 혼자도 예측 앱</h4>
+                  <span class="mSite">캡스톤 설계 2019년 1학기</span>
+                  <!-- <h5 class="h5_tit">캡스톤 설계 2019. 1학기</h5> -->
+                  <p class="s3_desc">
+                    지하철 탑승 인원을 시계열로 입력받아 LSTM 네트워크를
+                    활용하여 각 지하철 역의 시간대별 혼잡도를 예측하는 시스템을
+                    개발하였다.
+                  </p>
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW SITE</span></a
+                  >
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW MORE</span></a
+                  >
+                </div>
+              </div>
+              <div class="cont_right">
+                <div class="s3_img">
+                  <img src="assets/img/cont2.png" alt="반응형사이트" />
+                </div>
+                <div class="revealer"></div>
+                <div class="s3_text">
+                  <p class="s3_tit">PROJECT 02</p>
+                  <h4 class="h4_tit">고양이, 개 이미지 분류</h4>
+                  <span class="mSite">인공지능 2018년 2학기</span>
+                  <p class="s3_desc">
+                    CNN을 활용하여 이미지를 분류하는 시스템을 개발하였다. 학습된
+                    이미지 데이터를 통해 이미지를 정확하게 분류하는 기능을
+                    제작하였다.
+                  </p>
+                  <a
+                    href="http://kangsane.dothome.co.kr/responsive/html5/index.html"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW SITE</span></a
+                  >
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW MORE</span></a
+                  >
+                </div>
+              </div>
+              <div class="cont_left">
+                <div class="s3_img">
+                  <img src="assets/img/cont1.png" alt="웹표준사이트" />
+                </div>
+                <div class="revealer"></div>
+                <div class="s3_text">
+                  <p class="s3_tit">PROJECT 01</p>
+                  <h4 class="h4_tit">지하철 혼자도 예측 앱</h4>
+                  <span class="mSite">캡스톤 설계 2019년 1학기</span>
+                  <!-- <h5 class="h5_tit">캡스톤 설계 2019. 1학기</h5> -->
+                  <p class="s3_desc">
+                    지하철 탑승 인원을 시계열로 입력받아 LSTM 네트워크를
+                    활용하여 각 지하철 역의 시간대별 혼잡도를 예측하는 시스템을
+                    개발하였다.
+                  </p>
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW SITE</span></a
+                  >
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW MORE</span></a
+                  >
+                </div>
+              </div>
+              <div class="cont_right">
+                <div class="s3_img">
+                  <img src="assets/img/cont2.png" alt="반응형사이트" />
+                </div>
+                <div class="revealer"></div>
+                <div class="s3_text">
+                  <p class="s3_tit">PROJECT 02</p>
+                  <h4 class="h4_tit">고양이, 개 이미지 분류</h4>
+                  <span class="mSite">인공지능 2018년 2학기</span>
+                  <p class="s3_desc">
+                    CNN을 활용하여 이미지를 분류하는 시스템을 개발하였다. 학습된
+                    이미지 데이터를 통해 이미지를 정확하게 분류하는 기능을
+                    제작하였다.
+                  </p>
+                  <a
+                    href="http://kangsane.dothome.co.kr/responsive/html5/index.html"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW SITE</span></a
+                  >
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW MORE</span></a
+                  >
+                </div>
+              </div>
+              <div class="cont_left">
+                <div class="s3_img">
+                  <img src="assets/img/cont1.png" alt="웹표준사이트" />
+                </div>
+                <div class="revealer"></div>
+                <div class="s3_text">
+                  <p class="s3_tit">PROJECT 01</p>
+                  <h4 class="h4_tit">지하철 혼자도 예측 앱</h4>
+                  <span class="mSite">캡스톤 설계 2019년 1학기</span>
+                  <!-- <h5 class="h5_tit">캡스톤 설계 2019. 1학기</h5> -->
+                  <p class="s3_desc">
+                    지하철 탑승 인원을 시계열로 입력받아 LSTM 네트워크를
+                    활용하여 각 지하철 역의 시간대별 혼잡도를 예측하는 시스템을
+                    개발하였다.
+                  </p>
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW SITE</span></a
+                  >
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW MORE</span></a
+                  >
+                </div>
+              </div>
+              <div class="cont_right">
+                <div class="s3_img">
+                  <img src="assets/img/cont2.png" alt="반응형사이트" />
+                </div>
+                <div class="revealer"></div>
+                <div class="s3_text">
+                  <p class="s3_tit">PROJECT 02</p>
+                  <h4 class="h4_tit">고양이, 개 이미지 분류</h4>
+                  <span class="mSite">인공지능 2018년 2학기</span>
+                  <p class="s3_desc">
+                    CNN을 활용하여 이미지를 분류하는 시스템을 개발하였다. 학습된
+                    이미지 데이터를 통해 이미지를 정확하게 분류하는 기능을
+                    제작하였다.
+                  </p>
+                  <a
+                    href="http://kangsane.dothome.co.kr/responsive/html5/index.html"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW SITE</span></a
+                  >
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW MORE</span></a
+                  >
+                </div>
+              </div>
+              <div class="cont_left">
+                <div class="s3_img">
+                  <img src="assets/img/cont1.png" alt="웹표준사이트" />
+                </div>
+                <div class="revealer"></div>
+                <div class="s3_text">
+                  <p class="s3_tit">PROJECT 01</p>
+                  <h4 class="h4_tit">지하철 혼자도 예측 앱</h4>
+                  <span class="mSite">캡스톤 설계 2019년 1학기</span>
+                  <!-- <h5 class="h5_tit">캡스톤 설계 2019. 1학기</h5> -->
+                  <p class="s3_desc">
+                    지하철 탑승 인원을 시계열로 입력받아 LSTM 네트워크를
+                    활용하여 각 지하철 역의 시간대별 혼잡도를 예측하는 시스템을
+                    개발하였다.
+                  </p>
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW SITE</span></a
+                  >
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW MORE</span></a
+                  >
+                </div>
+              </div>
+              <div class="cont_right">
+                <div class="s3_img">
+                  <img src="assets/img/cont2.png" alt="반응형사이트" />
+                </div>
+                <div class="revealer"></div>
+                <div class="s3_text">
+                  <p class="s3_tit">PROJECT 02</p>
+                  <h4 class="h4_tit">고양이, 개 이미지 분류</h4>
+                  <span class="mSite">인공지능 2018년 2학기</span>
+                  <p class="s3_desc">
+                    CNN을 활용하여 이미지를 분류하는 시스템을 개발하였다. 학습된
+                    이미지 데이터를 통해 이미지를 정확하게 분류하는 기능을
+                    제작하였다.
+                  </p>
+                  <a
+                    href="http://kangsane.dothome.co.kr/responsive/html5/index.html"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW SITE</span></a
+                  >
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW MORE</span></a
+                  >
+                </div>
+              </div>
+              <div class="cont_left">
+                <div class="s3_img">
+                  <img src="assets/img/cont1.png" alt="웹표준사이트" />
+                </div>
+                <div class="revealer"></div>
+                <div class="s3_text">
+                  <p class="s3_tit">PROJECT 01</p>
+                  <h4 class="h4_tit">지하철 혼자도 예측 앱</h4>
+                  <span class="mSite">캡스톤 설계 2019년 1학기</span>
+                  <!-- <h5 class="h5_tit">캡스톤 설계 2019. 1학기</h5> -->
+                  <p class="s3_desc">
+                    지하철 탑승 인원을 시계열로 입력받아 LSTM 네트워크를
+                    활용하여 각 지하철 역의 시간대별 혼잡도를 예측하는 시스템을
+                    개발하였다.
+                  </p>
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW SITE</span></a
+                  >
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW MORE</span></a
+                  >
+                </div>
+              </div>
+              <div class="cont_right">
+                <div class="s3_img">
+                  <img src="assets/img/cont2.png" alt="반응형사이트" />
+                </div>
+                <div class="revealer"></div>
+                <div class="s3_text">
+                  <p class="s3_tit">PROJECT 02</p>
+                  <h4 class="h4_tit">고양이, 개 이미지 분류</h4>
+                  <span class="mSite">인공지능 2018년 2학기</span>
+                  <p class="s3_desc">
+                    CNN을 활용하여 이미지를 분류하는 시스템을 개발하였다. 학습된
+                    이미지 데이터를 통해 이미지를 정확하게 분류하는 기능을
+                    제작하였다.
+                  </p>
+                  <a
+                    href="http://kangsane.dothome.co.kr/responsive/html5/index.html"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW SITE</span></a
+                  >
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW MORE</span></a
+                  >
+                </div>
+              </div>
+              <div class="cont_left">
+                <div class="s3_img">
+                  <img src="assets/img/cont1.png" alt="웹표준사이트" />
+                </div>
+                <div class="revealer"></div>
+                <div class="s3_text">
+                  <p class="s3_tit">PROJECT 01</p>
+                  <h4 class="h4_tit">지하철 혼자도 예측 앱</h4>
+                  <span class="mSite">캡스톤 설계 2019년 1학기</span>
+                  <!-- <h5 class="h5_tit">캡스톤 설계 2019. 1학기</h5> -->
+                  <p class="s3_desc">
+                    지하철 탑승 인원을 시계열로 입력받아 LSTM 네트워크를
+                    활용하여 각 지하철 역의 시간대별 혼잡도를 예측하는 시스템을
+                    개발하였다.
+                  </p>
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW SITE</span></a
+                  >
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW MORE</span></a
+                  >
+                </div>
+              </div>
+              <div class="cont_right">
+                <div class="s3_img">
+                  <img src="assets/img/cont2.png" alt="반응형사이트" />
+                </div>
+                <div class="revealer"></div>
+                <div class="s3_text">
+                  <p class="s3_tit">PROJECT 02</p>
+                  <h4 class="h4_tit">고양이, 개 이미지 분류</h4>
+                  <span class="mSite">인공지능 2018년 2학기</span>
+                  <p class="s3_desc">
+                    CNN을 활용하여 이미지를 분류하는 시스템을 개발하였다. 학습된
+                    이미지 데이터를 통해 이미지를 정확하게 분류하는 기능을
+                    제작하였다.
+                  </p>
+                  <a
+                    href="http://kangsane.dothome.co.kr/responsive/html5/index.html"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW SITE</span></a
+                  >
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW MORE</span></a
+                  >
+                </div>
+              </div>
+              <div class="cont_left">
+                <div class="s3_img">
+                  <img src="assets/img/cont1.png" alt="웹표준사이트" />
+                </div>
+                <div class="revealer"></div>
+                <div class="s3_text">
+                  <p class="s3_tit">PROJECT 01</p>
+                  <h4 class="h4_tit">지하철 혼자도 예측 앱</h4>
+                  <span class="mSite">캡스톤 설계 2019년 1학기</span>
+                  <!-- <h5 class="h5_tit">캡스톤 설계 2019. 1학기</h5> -->
+                  <p class="s3_desc">
+                    지하철 탑승 인원을 시계열로 입력받아 LSTM 네트워크를
+                    활용하여 각 지하철 역의 시간대별 혼잡도를 예측하는 시스템을
+                    개발하였다.
+                  </p>
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW SITE</span></a
+                  >
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW MORE</span></a
+                  >
+                </div>
+              </div>
+              <div class="cont_right">
+                <div class="s3_img">
+                  <img src="assets/img/cont2.png" alt="반응형사이트" />
+                </div>
+                <div class="revealer"></div>
+                <div class="s3_text">
+                  <p class="s3_tit">PROJECT 02</p>
+                  <h4 class="h4_tit">고양이, 개 이미지 분류</h4>
+                  <span class="mSite">인공지능 2018년 2학기</span>
+                  <p class="s3_desc">
+                    CNN을 활용하여 이미지를 분류하는 시스템을 개발하였다. 학습된
+                    이미지 데이터를 통해 이미지를 정확하게 분류하는 기능을
+                    제작하였다.
+                  </p>
+                  <a
+                    href="http://kangsane.dothome.co.kr/responsive/html5/index.html"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW SITE</span></a
+                  >
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW MORE</span></a
+                  >
+                </div>
+              </div>
+              <div class="cont_left">
+                <div class="s3_img">
+                  <img src="assets/img/cont1.png" alt="웹표준사이트" />
+                </div>
+                <div class="revealer"></div>
+                <div class="s3_text">
+                  <p class="s3_tit">PROJECT 01</p>
+                  <h4 class="h4_tit">지하철 혼자도 예측 앱</h4>
+                  <span class="mSite">캡스톤 설계 2019년 1학기</span>
+                  <!-- <h5 class="h5_tit">캡스톤 설계 2019. 1학기</h5> -->
+                  <p class="s3_desc">
+                    지하철 탑승 인원을 시계열로 입력받아 LSTM 네트워크를
+                    활용하여 각 지하철 역의 시간대별 혼잡도를 예측하는 시스템을
+                    개발하였다.
+                  </p>
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW SITE</span></a
+                  >
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW MORE</span></a
+                  >
+                </div>
+              </div>
+              <div class="cont_right">
+                <div class="s3_img">
+                  <img src="assets/img/cont2.png" alt="반응형사이트" />
+                </div>
+                <div class="revealer"></div>
+                <div class="s3_text">
+                  <p class="s3_tit">PROJECT 02</p>
+                  <h4 class="h4_tit">고양이, 개 이미지 분류</h4>
+                  <span class="mSite">인공지능 2018년 2학기</span>
+                  <p class="s3_desc">
+                    CNN을 활용하여 이미지를 분류하는 시스템을 개발하였다. 학습된
+                    이미지 데이터를 통해 이미지를 정확하게 분류하는 기능을
+                    제작하였다.
+                  </p>
+                  <a
+                    href="http://kangsane.dothome.co.kr/responsive/html5/index.html"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW SITE</span></a
+                  >
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW MORE</span></a
+                  >
+                </div>
+              </div>
+              <div class="cont_left">
+                <div class="s3_img">
+                  <img src="assets/img/cont1.png" alt="웹표준사이트" />
+                </div>
+                <div class="revealer"></div>
+                <div class="s3_text">
+                  <p class="s3_tit">PROJECT 01</p>
+                  <h4 class="h4_tit">지하철 혼자도 예측 앱</h4>
+                  <span class="mSite">캡스톤 설계 2019년 1학기</span>
+                  <!-- <h5 class="h5_tit">캡스톤 설계 2019. 1학기</h5> -->
+                  <p class="s3_desc">
+                    지하철 탑승 인원을 시계열로 입력받아 LSTM 네트워크를
+                    활용하여 각 지하철 역의 시간대별 혼잡도를 예측하는 시스템을
+                    개발하였다.
+                  </p>
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW SITE</span></a
+                  >
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW MORE</span></a
+                  >
+                </div>
+              </div>
+              <div class="cont_right">
+                <div class="s3_img">
+                  <img src="assets/img/cont2.png" alt="반응형사이트" />
+                </div>
+                <div class="revealer"></div>
+                <div class="s3_text">
+                  <p class="s3_tit">PROJECT 02</p>
+                  <h4 class="h4_tit">고양이, 개 이미지 분류</h4>
+                  <span class="mSite">인공지능 2018년 2학기</span>
+                  <p class="s3_desc">
+                    CNN을 활용하여 이미지를 분류하는 시스템을 개발하였다. 학습된
+                    이미지 데이터를 통해 이미지를 정확하게 분류하는 기능을
+                    제작하였다.
+                  </p>
+                  <a
+                    href="http://kangsane.dothome.co.kr/responsive/html5/index.html"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW SITE</span></a
+                  >
+                  <a
+                    href="http://kangsane.dothome.co.kr/web/"
+                    target="_blank"
+                    class="skew"
+                    ><span>VIEW MORE</span></a
+                  >
+                </div>
+              </div>
+              <!--                         내꺼 끝 -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //section3 -->
+
+      <section id="section4">
+        <div class="s4_bg"></div>
+        <div class="container">
+          <div class="row">
+            <div class="sec4">
+              <p class="strapline">HTML · CSS3 · JAVASCRIPT</p>
+              <h3>
+                <span>A</span><span>N</span><span>I</span><span>M</span
+                ><span>A</span><span>T</span><span>I</span><span>O</span
+                ><span>N</span>
+              </h3>
+              <div class="ani_wrap">
+                <div class="ani ani1">
+                  <a href="#">TEXT</a>
+                    </div>
+                    <div class="ani ani2">
+                        <a href="#">ROKET</a>
+                    </div>
+                    <div class="ani ani3">
+                        <a href="#">CUBE</a>
+                    </div>
+                    <div class="ani ani4">
+                        <a href="#">LINE</a>
+                    </div>
+                    <div class="ani ani5">
+                        <a href="#">LOADING</a>
+                    </div>
                 </div>
             </div>
+        </div>
+    </div>
+    </section>
+    <!-- //section4 -->
+
+    <div id="modal" class="modal1">
+        <div class="modal-bg">
+            <div class="modal-cont">
+                <h2><span class="style1">TEXT</span> ANIMATION</h2>
+                <p data-height="600" data-theme-id="0" data-slug-hash="gNWqoq" data-default-tab="result" data-user="kangsan" data-pen-title="SVG - Text animation" class="codepen">
+                    See the Pen
+                    <a href="https://codepen.io/ksan63/pen/gNWqoq">SVG - Text animation</a
+              >
+              by kangsan (<a href="https://codepen.io/ksan63">@ksan63</a>) on
+                    <a href="https://codepen.io">CodePen</a>.
+                </p>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                <a href="#1" class="close close1">
+                    <svg viewBox="0 0 24 24">
+                <path
+                  d="M14.1,12L22,4.1c0.6-0.6,0.6-1.5,0-2.1c-0.6-0.6-1.5-0.6-2.1,0L12,9.9L4.1,2C3.5,1.4,2.5,1.4,2,2C1.4,2.5,1.4,3.5,2,4.1
+                            L9.9,12L2,19.9c-0.6,0.6-0.6,1.5,0,2.1c0.3,0.3,0.7,0.4,1.1,0.4s0.8-0.1,1.1-0.4l7.9-7.9l7.9,7.9c0.3,0.3,0.7,0.4,1.1,0.4
+                            s0.8-0.1,1.1-0.4c0.6-0.6,0.6-1.5,0-2.1L14.1,12z"
+                />
+              </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="modal" class="modal2">
+        <div class="modal-bg">
+            <div class="modal-cont">
+                <h2><span class="style1">ROKET</span> ANIMATION</h2>
+                <p data-height="600" data-theme-id="0" data-slug-hash="rEmgee" data-default-tab="result" data-user="kangsan" data-pen-title="CSS animation" class="codepen">
+                    See the Pen
+                    <a href="https://codepen.io/ksan63/pen/rEmgee">CSS animation</a> by kangsan (<a href="https://codepen.io/ksan63">@ksan63</a>) on
+                    <a href="https://codepen.io">CodePen</a>.
+                </p>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                <a href="#1" class="close close1">
+                    <svg viewBox="0 0 24 24">
+                <path
+                  d="M14.1,12L22,4.1c0.6-0.6,0.6-1.5,0-2.1c-0.6-0.6-1.5-0.6-2.1,0L12,9.9L4.1,2C3.5,1.4,2.5,1.4,2,2C1.4,2.5,1.4,3.5,2,4.1
+                            L9.9,12L2,19.9c-0.6,0.6-0.6,1.5,0,2.1c0.3,0.3,0.7,0.4,1.1,0.4s0.8-0.1,1.1-0.4l7.9-7.9l7.9,7.9c0.3,0.3,0.7,0.4,1.1,0.4
+                            s0.8-0.1,1.1-0.4c0.6-0.6,0.6-1.5,0-2.1L14.1,12z"
+                />
+              </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="modal" class="modal3">
+        <div class="modal-bg">
+            <div class="modal-cont">
+                <h2><span class="style1">CUBE</span> ANIMATION</h2>
+                <p data-height="600" data-theme-id="0" data-slug-hash="QXvRPN" data-default-tab="result" data-user="kangsan" data-pen-title="CSS animation" class="codepen">
+                    See the Pen
+                    <a href="https://codepen.io/ksan63/pen/QXvRPN">Cube animation</a> by kangsan (<a href="https://codepen.io/ksan63">@ksan63</a>) on
+                    <a href="https://codepen.io">CodePen</a>.
+                </p>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                <a href="#1" class="close close1">
+                    <svg viewBox="0 0 24 24">
+                <path
+                  d="M14.1,12L22,4.1c0.6-0.6,0.6-1.5,0-2.1c-0.6-0.6-1.5-0.6-2.1,0L12,9.9L4.1,2C3.5,1.4,2.5,1.4,2,2C1.4,2.5,1.4,3.5,2,4.1
+                            L9.9,12L2,19.9c-0.6,0.6-0.6,1.5,0,2.1c0.3,0.3,0.7,0.4,1.1,0.4s0.8-0.1,1.1-0.4l7.9-7.9l7.9,7.9c0.3,0.3,0.7,0.4,1.1,0.4
+                            s0.8-0.1,1.1-0.4c0.6-0.6,0.6-1.5,0-2.1L14.1,12z"
+                />
+              </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="modal" class="modal4">
+        <div class="modal-bg">
+            <div class="modal-cont">
+                <h2><span class="style1">LINE</span> ANIMATION</h2>
+                <p data-height="600" data-theme-id="0" data-slug-hash="NZjZgb" data-default-tab="result" data-user="kangsan" data-pen-title="CSS animation" class="codepen">
+                    See the Pen
+                    <a href="https://codepen.io/ksan63/pen/NZjZgb">LINE animation</a> by kangsan (<a href="https://codepen.io/ksan63">@ksan63</a>) on
+                    <a href="https://codepen.io">CodePen</a>.
+                </p>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                <a href="#1" class="close close1">
+                    <svg viewBox="0 0 24 24">
+                <path
+                  d="M14.1,12L22,4.1c0.6-0.6,0.6-1.5,0-2.1c-0.6-0.6-1.5-0.6-2.1,0L12,9.9L4.1,2C3.5,1.4,2.5,1.4,2,2C1.4,2.5,1.4,3.5,2,4.1
+                            L9.9,12L2,19.9c-0.6,0.6-0.6,1.5,0,2.1c0.3,0.3,0.7,0.4,1.1,0.4s0.8-0.1,1.1-0.4l7.9-7.9l7.9,7.9c0.3,0.3,0.7,0.4,1.1,0.4
+                            s0.8-0.1,1.1-0.4c0.6-0.6,0.6-1.5,0-2.1L14.1,12z"
+                />
+              </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="modal" class="modal5">
+        <div class="modal-bg">
+            <div class="modal-cont">
+                <h2><span class="style1">LOADING</span> ANIMATION</h2>
+                <p data-height="600" data-theme-id="0" data-slug-hash="pXPXQa" data-default-tab="result" data-user="kangsan" data-pen-title="CSS animation" class="codepen">
+                    See the Pen
+                    <a href="https://codepen.io/ksan63/pen/pXPXQa">LODING animation</a
+              >
+              by kangsan (<a href="https://codepen.io/ksan63">@ksan63</a>) on
+                    <a href="https://codepen.io">CodePen</a>.
+                </p>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                <a href="#1" class="close close1">
+                    <svg viewBox="0 0 24 24">
+                <path
+                  d="M14.1,12L22,4.1c0.6-0.6,0.6-1.5,0-2.1c-0.6-0.6-1.5-0.6-2.1,0L12,9.9L4.1,2C3.5,1.4,2.5,1.4,2,2C1.4,2.5,1.4,3.5,2,4.1
+                            L9.9,12L2,19.9c-0.6,0.6-0.6,1.5,0,2.1c0.3,0.3,0.7,0.4,1.1,0.4s0.8-0.1,1.1-0.4l7.9-7.9l7.9,7.9c0.3,0.3,0.7,0.4,1.1,0.4
+                            s0.8-0.1,1.1-0.4c0.6-0.6,0.6-1.5,0-2.1L14.1,12z"
+                />
+              </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- //modal -->
+
+    <section id="section5">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <form id="contactForm" name="sentMessage" novalidate="novalidate">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <!-- <div class="form-group">
-                    <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required"
-                      data-validation-required-message="Please enter your name.">
-                    <p class="help-block text-danger"></p>
-                  </div> -->
-                                <!-- <div class="form-group"> -->
-                                <!-- <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required"
-                      data-validation-required-message="Please enter your email address.">
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required"
-                      data-validation-required-message="Please enter your phone number.">
-                    <p class="help-block text-danger"></p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <textarea class="form-control" id="message" placeholder="Your Message *" required="required"
-                      data-validation-required-message="Please enter a message."></textarea>
-                    <p class="help-block text-danger"></p>
-                  </div> -->
-                                <!-- </div>
-                <div class="clearfix"></div>
-                <div class="col-lg-12 text-center">
-                  <div id="success"></div>
-                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send
-                    Message</button> -->
-                            </div>
+                <div class="sec5">
+                    <p class="strapline">THANK YOU</p>
+                    <h3>
+                        <span>C</span><span>O</span><span>N</span><span>T</span
+                ><span>A</span><span>C</span><span>T</span>
+                    </h3>
+                    <div class="namecard">
+                        <span class="sp1">&lt; To Me &gt;</span>
+                        <div class="card">
+                            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/sovaniirune@naver.com" method="post">
+                                <fieldset id="fs-frm-inputs">
+                                    <label for="full-name" class="ir_su">Name</label>
+                                    <input type="text" name="name" id="full-name" placeholder="Your name.." required="" />
+                                    <label for="email-address" class="ir_su">Email Address</label
+                      >
+                      <input
+                        type="email"
+                        name="_replyto"
+                        id="email-address"
+                        placeholder="Your email.."
+                        required=""
+                      />
+                      <label for="message" class="ir_su">Message</label>
+                                    <textarea rows="5" name="message" id="message" placeholder="message.." required=""></textarea>
+                                    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission" />
+                                    <input type="submit" value="Submit" />
+                                </fieldset>
+                            </form>
                         </div>
-                    </form>
+                        <span class="sp2">&lt; / From You &gt;</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <div id="contact">
-        <h2>Get in Touch</h2>
-        <div id="contact-form">
-            <form method="POST" action="https://formspree.io/email@email.com">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required />
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-        <!-- End #contact-form -->
-    </div>
-    <!-- End #contact -->
+    <!-- //section5 -->
+    </section>
+    <!-- //contents -->
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>Copyright &copy; 2021 Lay4U</p>
-                </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-              <i class="fa fa-chevron-up" aria-hidden="true"></i>
-            </span>
-                </div>
-                <div class="col-sm-5 social">
-                    <ul>
-                        <li>
-                            <a href="https://githubmemory.com/@Lay4U" target="_blank"><i class="fa fa-github" aria-hidden="true"></i
-                ></a>
-                        </li>
-                        <li>
-                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i
-                ></a>
-                        </li>
-                        <li>
-                            <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i
-                ></a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i
-                ></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i
-                ></a>
-                        </li>
-                        <li>
-                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i
-                ></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- End footer -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
+    <!-- script -->
+    <script src="assets/js/jquery.min_1.12.4.js"></script>
+    <script src="assets/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="assets/js/modernizr-custom.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/easypiechart.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        //윈도우 팝업
+        $('.window').click(function(e) {
+            e.preventDefault();
+            //window.open("파일명", "팝업이름", "옵션설정");
+            //옵션 : left, top, width, height, status, toolbar, location, menubar, scrollbars, fullscreen
+            window.open(
+                'http://kangsane.dothome.co.kr/kakao/',
+                'popup01',
+                'width=375, height=667, toolbar=0, menubar=0'
+            );
+        });
+    </script>
 </body>
 
 </html>
