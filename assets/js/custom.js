@@ -39,18 +39,18 @@ $(window).scroll(function() {
     }
 });
 
-// 메인 버튼 클릭 시
-$('a[href^="#"]').on('click', function(e) {
-    e.preventDefault();
-    var target = $($(this).attr('href'));
+// // 메인 버튼 클릭 시
+// $('a[href^="#"]').on('click', function(e) {
+//     e.preventDefault();
+//     var target = $($(this).attr('href'));
 
-    if (target.length) {
-        $('html, body').animate({ scrollTop: target.offset().top },
-            600,
-            'easeInOutExpo'
-        );
-    }
-});
+//     if (target.length) {
+//         $('html, body').animate({ scrollTop: target.offset().top },
+//             600,
+//             'easeInOutExpo'
+//         );
+//     }
+// });
 
 //counter
 function counter() {
@@ -181,10 +181,22 @@ $('.close').click(function() {
     $('#modal.modal5').addClass('out');
 });
 
-//스크롤 시 애니메이션
 $(window).scroll(function() {
     var wScroll = $(this).scrollTop();
-
+    //project부터 네비게이션 바 추가
+    if (wScroll >= 2600 && wScroll <= 17900) {
+        $('#navPJ').addClass('fixed-top');
+        $('#navPJ').removeClass('invisible');
+    } else {
+        $('#navPJ').removeClass('fixed-top');
+        $('#navPJ').addClass('invisible');
+    }
+});
+//스크롤 시 애니메이션
+// $(window).scroll(function() {
+$(window).one('scroll', function() {
+    // var wScroll = $(this).scrollTop();
+    var wScroll = 999999;
     //section2 about
     if (
         wScroll >=

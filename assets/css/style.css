@@ -2803,3 +2803,16 @@ body.active .sec1 .text .skew {
 }
 
 @media (max-width: 320px) {}
+
+
+/* #navPJ {
+    color: whitesmoke;
+} */
+
+#navbarNav>ul>li>a {
+    color: whitesmoke;
+}
+
+#navPJ {
+    background-color: #31373d !important;
+}
