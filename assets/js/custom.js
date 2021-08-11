@@ -505,3 +505,41 @@ $(function() {
         menuBtn.find('.menu-button.wrap').removeClass('show3');
     });
 });
+
+$(window).ready(function() {
+    $('#hideshow').trigger('click');
+});
+
+$(function() {
+    $('#p10').hide();
+    $('#p11').hide();
+    $('#p12').hide();
+    $('#p13').hide();
+    $('#p14').hide();
+    $('#p15').hide();
+    $('#p16').hide();
+    $('#p17').hide();
+    $('#p18').hide();
+    $('#p19').hide();
+    $('#p20').hide();
+    $('#p21').hide();
+
+    $('#hideshow').click(function() {
+        $('#p10').toggle();
+        $('#p11').toggle();
+        $('#p12').toggle();
+        $('#p13').toggle();
+        $('#p14').toggle();
+        $('#p15').toggle();
+        $('#p16').toggle();
+        $('#p17').toggle();
+        $('#p18').toggle();
+        $('#p19').toggle();
+        $('#p20').toggle();
+        $('#p21').toggle();
+    });
+
+    $('#navbarNav').click(function() {
+        console.log($(this));
+    });
+});
