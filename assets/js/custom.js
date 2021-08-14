@@ -538,8 +538,4 @@ $(function() {
         $('#p20').toggle();
         $('#p21').toggle();
     });
-
-    $('#navbarNav').click(function() {
-        console.log($(this));
-    });
 });
