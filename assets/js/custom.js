@@ -506,9 +506,6 @@ $(function() {
     });
 });
 
-$(window).ready(function() {
-    $('#hideshow').trigger('click');
-});
 
 $(function() {
     $('#p10').hide();
@@ -539,7 +536,4 @@ $(function() {
         $('#p21').toggle();
     });
 
-    $('#navbarNav').click(function() {
-        console.log($(this));
-    });
 });
