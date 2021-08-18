@@ -231,11 +231,6 @@ $(window).one('scroll', function() {
     }
 
     //section3 coding
-    console.log('Scroll: ' + wScroll);
-    console.log('cont_right: ' + $('.sec3 .cont_right .s3_img').offset().top);
-    console.log('content_left: ' + $('.sec3 .cont_left .s3_text').offset().top);
-    console.log('wtf: ' + $(window).height() / 1.5);
-
     //project부터 네비게이션 바 추가
     if (wScroll >= 2600 && wScroll <= 17900) {
         $('#navPJ').addClass('fixed-top');
